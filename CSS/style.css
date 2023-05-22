@@ -1,0 +1,739 @@
+:root {
+    /*colors*/
+    --blackclr: black;
+    --whiteclr: white;
+    --grayclr: lightgray;
+    --lgtgrayclr: #f2f2f2;
+    --blueclr: #0065fc;
+    --lgtblueclr: #deebff;
+    /*shadow*/
+    --shdw: 0 3px 10px 3px var(--grayclr);
+    --lgtshdw: 0 3px 10px 3px var(--lgtgrayclr);
+}
+
+body {
+    box-sizing: border-box;
+    font: 15px 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blackclr);
+}
+
+/*********************** T E X T ***********************/
+.bldtxt1 {
+    font: bold 20px 'Raleway', sans-serif;
+    margin: 0;
+}
+
+.bldtxt2 {
+    font: bolder 15px 'Raleway', sans-serif;
+    margin: 0;
+}
+
+.bldtxt3 {
+    font: bold 14px 'Raleway', sans-serif;
+}
+
+.dsctxt {
+    font: 14px 'Raleway', sans-serif;
+}
+
+.iconsize {
+    font-size: 15px;
+}
+
+.iconsizesml {
+    font-size: 10px;
+}
+
+/************************************************************** 
+H E A D E R * N A V
+***************************************************************/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 3%;
+}
+
+.logo {
+    width: 125px;
+}
+
+.navlist {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navlnk {
+    padding: 50px 30px;
+    border-top: medium solid transparent;
+    cursor: pointer;
+}
+
+.navlnk:hover {
+    border-color: var(--blueclr);
+}
+
+.navtxt {
+    text-decoration: none;
+    color: var(--blackclr);
+}
+
+.navlnk:hover .navtxt {
+    color: var(--blueclr);
+}
+
+/**************************************************************
+M A I N
+***************************************************************/
+
+main {
+    padding-inline: 3%;
+}
+
+/********** R E C H E R C H E * F I L T R E S **********/
+
+.srchfltr .mainbldtxt {
+    margin: 0;
+    margin-bottom: 3px;
+}
+
+.srchfltr .maindscrptxt {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+/****************** R E C H E R C H E ******************/
+
+.srch {
+    display: flex;
+    align-items: center;
+}
+
+.mapdot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    background-color: var(--lgtgrayclr);
+    border-radius: 15px 0 0 15px;
+}
+
+.srchinput {
+    height: 45px;
+    width: 200px;
+    padding-inline: 20px;
+    border: none;
+    border-top: 2px solid var(--lgtgrayclr);
+    border-bottom: 2px solid var(--lgtgrayclr);
+}
+
+.srchinput::placeholder {
+    color: var(--blackclr);
+}
+
+.srchbtn {
+    height: 45px;
+    color: var(--whiteclr);
+    background-color: var(--blueclr);
+    border-radius: 0 15px 15px 0;
+    padding-inline: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.srchbtn i {
+    display: none;
+    color: var(--whiteclr);
+}
+
+/******************** F I L T R E S ********************/
+
+.fltr {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-block: 20px;
+}
+
+.fltrttl {
+    margin-right: 20px;
+}
+
+.fltrgroup {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fltrbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-right: 20px;
+    border: 2px solid var(--lgtgrayclr);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.fltrbtn:hover {
+    border-color: var(--lgtblueclr);
+    background-color: var(--lgtblueclr);
+}
+
+.fltrbtn i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconbkgrnd {
+    background-color: var(--lgtblueclr);
+    border-radius: 30px;
+    color: var(--blueclr);
+    height: 42px;
+    width: 42px;
+    margin: -2px;
+}
+
+.fltrbtn:hover .iconbkgrnd {
+    background-color: var(--blueclr);
+    color: var(--whiteclr);
+}
+
+.fltrtxt {
+    padding-inline: 20px;
+}
+
+.fltrbtn:hover .fltrtxt {
+    color: var(--blueclr);
+}
+
+/*********************** I N F O ***********************/
+
+.info {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.infologo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    border: 0.5px solid var(--lgtgrayclr);
+    border-radius: 30px;
+    color: var(--blueclr);
+    height: 25px;
+    width: 25px;
+}
+
+/****** H E B E R G E M E N T * P O P U L A I R E ******/
+
+.hbrgppl {
+    display: flex;
+    justify-content: space-between;
+}
+
+/**************** H E B E R G E M E N T ****************/
+
+#hbrg {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    padding-inline: 40px;
+    padding-block: 30px;
+    margin-right: 20px;
+    background-color: var(--lgtgrayclr);
+    border-radius: 30px;
+}
+
+.hbrgttl {
+    padding-bottom: 20px;
+}
+
+.hbrglist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hbrgcard {
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: var(--whiteclr);
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: var(--shdw);
+}
+
+.hbrgimg {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.hbrgtxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.starlist {
+    padding-top: 5px;
+}
+
+.bluestar {
+    color: var(--blueclr);
+}
+
+.greystar {
+    color: var(--grayclr);
+}
+
+.hbrgplus {
+    margin-top: 20px;
+}
+
+/****************** P O P U L A I R E ******************/
+
+.ppl {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-inline: 40px;
+    padding-block: 30px;
+    margin-left: 20px;
+    background-color: var(--lgtgrayclr);
+    border-radius: 30px;
+}
+
+.pplttl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.ppllist {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.pplcard {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: var(--whiteclr);
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: var(--shdw);
+}
+
+.pplimg {
+    height: 130px;
+    width: 40%;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+
+.ppltxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-block: 10px;
+    padding-left: 20px;
+}
+
+/****************** A C T I V I T E S ******************/
+
+#actv {
+    padding-block: 40px;
+}
+
+.actvlist {
+    display: flex;
+    margin-top: 20px;
+    height: 500px;
+}
+
+.actvbox1 {
+    display: flex;
+    width: 50%;
+    margin-right: 20px;
+}
+
+.actvbox2 {
+    display: flex;
+    width: 50%;
+    margin-left: 20px;
+}
+
+.actvcardclmn {
+    width: 50%;
+}
+
+.actvcard1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-radius: 30px;
+    box-shadow: var(--lgtshdw);
+    margin-right: 40px;
+}
+
+.actvcard2 {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: var(--lgtshdw);
+    margin-bottom: 40px;
+}
+
+.actvimglng {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px 30px 0 0;
+    object-fit: cover;
+}
+
+.actvimgshrt1 {
+    width: 100%;
+    height: 206.4px;
+    border-radius: 30px 30px 0 0;
+    object-fit: cover;
+}
+
+.actvimgshrt2 {
+    width: 100%;
+    height: 137.6px;
+    border-radius: 30px 30px 0 0;
+    object-fit: cover;
+}
+
+.actvtxt {
+    padding: 20px;
+}
+
+/************************************************************** 
+F O O T E R
+***************************************************************/
+
+footer {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-inline: 3%;
+    background-color: var(--lgtgrayclr);
+}
+
+.ftrlist {
+    list-style: none;
+    padding-right: 15%;
+}
+
+.ftrlist li {
+    padding-bottom: 10px;
+}
+
+.ftrlist .ftrttl {
+    padding-bottom: 20px;
+}
+
+.ftrtxt {
+    text-decoration: none;
+    color: var(--blackclr);
+}
+
+
+/************************************************************** 
+
+M O B I L E 
+
+***************************************************************/
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 0;
+    }
+
+    main {
+        padding-top: 20px;
+    }
+
+    /******************* H E A D E R *******************/
+
+    header {
+        flex-direction: column;
+        align-items: normal;
+        padding-inline: 0;
+    }
+
+    .divlogo {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .navlnk {
+        width: 50%;
+        padding: 20px;
+        text-align: center;
+        border-top: none;
+        border-bottom: medium solid var(--lgtgrayclr);
+    }
+
+    /******** R E C H E R C H E & F I L T R E S ********/
+
+    .srchfltr {
+        padding-inline: 5%;
+    }
+
+    /**************** R E C H E R C H E ****************/
+
+    .mapdot {
+        padding-inline: 5px;
+    }
+
+    .srchinput {
+        width: 100%;
+    }
+
+    .srchbtn {
+        border-radius: 15px;
+        padding-inline: 15px;
+        margin-left: -10px;
+    }
+
+    .srchbtn span {
+        display: none;
+    }
+
+    .srchbtn i {
+        display: block;
+    }
+
+    /****************** F I L T R E S ******************/
+
+    .fltr {
+        display: block;
+    }
+
+    /********************* I N F O *********************/
+
+    .info {
+        align-items: baseline;
+    }
+
+    .infotxt {
+        display: flex;
+        align-items: center;
+    }
+
+    /**** H E B E R G E M E N T & P O P U L A I R E ****/
+
+    .hbrgppl {
+        flex-direction: column-reverse;
+    }
+
+    #hbrg {
+        margin: 0;
+        padding-inline: 5%;
+        padding-bottom: 0;
+        border-radius: 0;
+        background-color: var(--whiteclr);
+    }
+
+    .hbrgcard {
+        width: auto;
+        box-shadow: var(--lgtshdw);
+    }
+
+    .hbrglist {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .hbrgimg {
+        height: 120px;
+    }
+
+    .ppl {
+        margin: 0;
+        padding-inline: 5%;
+        border-radius: 0;
+    }
+
+    /**************** A C T I V I T E S ****************/
+
+    #actv {
+        padding-inline: 5%;
+    }
+
+    .actvlist {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .actvbox1 {
+        flex-direction: column;
+        width: auto;
+        margin: 0;
+    }
+
+    .actvbox2 {
+        flex-direction: column;
+        width: auto;
+        margin: 0;
+    }
+
+    .actvcardclmn {
+        width: 100%;
+    }
+
+    .actvcard1 {
+        width: 100%;
+        height: 208px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .actvcard2 {
+        height: 208px;
+        margin-bottom: 20px;
+    }
+
+    .actvimglng {
+        height: 150px;
+    }
+
+    .actvimgshrt1 {
+        height: 150px;
+    }
+
+    .actvimgshrt2 {
+        height: 150px;
+    }
+
+    /******************* F O O T E R *******************/
+
+    footer {
+        flex-direction: column;
+        padding-inline: 5%;
+    }
+
+    .ftrlist {
+        padding: 0;
+    }
+}
+
+/**************************************************************
+ 
+T A B L E T T E 
+
+***************************************************************/
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+    main {
+        padding: 0;
+    }
+
+    /******************* H E A D E R *******************/
+
+    header {
+        padding-inline: 5%;
+    }
+
+    /******** R E C H E R C H E & F I L T R E S ********/
+
+    .srchfltr {
+        padding-inline: 5%;
+    }
+
+    /**** H E B E R G E M E N T & P O P U L A I R E ****/
+
+    .hbrgppl {
+        flex-direction: column-reverse;
+    }
+
+    #hbrg {
+        margin: 0;
+        padding-inline: 5%;
+        padding-bottom: 0;
+        border-radius: 0;
+        background-color: var(--whiteclr);
+    }
+
+    .hbrgcard {
+        width: 47%;
+        box-shadow: var(--lgtshdw);
+    }
+
+    .hbrgimg {
+        height: 150px;
+    }
+
+    .ppl {
+        margin: 0;
+        padding-inline: 5%;
+        border-radius: 0;
+    }
+
+    .pplimg {
+        height: 150px;
+    }
+
+    /**************** A C T I V I T E S ****************/
+
+    #actv {
+        padding-inline: 5%;
+    }
+
+    .actvlist {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .actvbox1 {
+        width: auto;
+        height: 500px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .actvbox2 {
+        flex-direction: row-reverse;
+        width: auto;
+        height: 500px;
+        margin: auto;
+    }
+
+    .actvcard1 {
+        margin-right: 30px;
+    }
+
+    .actvbox2 .actvcard1 {
+        margin: 0;
+        margin-left: 30px;
+    }
+    
+    /******************* F O O T E R *******************/
+
+    .ftrlist {
+        padding-right: 5%;
+    }
+}
